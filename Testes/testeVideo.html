@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     
+    <video id="vid" width="800" height="450">
+            <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+    </video>
+    <progress id="progressBar" value="" max="100"></progress>
+    <button onclick="Play()" id="demo"></button>
+    <style>
+        video {
+           display: block;
+        }
+        #progressBar {
+            margin-top: 5px;
+            width: 300px;
+            
+        }
+        button {
+            width: 15px;
+            height: 15px;
+        }
+    
+    </style>
+    <script>
+        var video = document.getElementById("vid");
+        var butn = document.getElementById("demo")
+
+        function Play() {
+            if(video.paused) {
+                video.play();
+            }
+            else {
+                video.pause();
+            }
+        }
+
+        setInterval(() => {
+            const percentual = (video.currentTime / video.duration) * 100
+            const valorBar = getElementById("progressBar")
+            valorBar.value = percentual
+        }, 500)
+    
+    
+    
+    
+    </script>
+</body>
+</html>
