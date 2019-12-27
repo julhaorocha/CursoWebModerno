@@ -3,7 +3,7 @@ console.log(soma(3, 4))
 
 
 //function declaration(carrega mesmo antes de executar o código)
-function soma(x, y){
+function soma(x, y){//funciona mesmo se for chamada antes da declaração
     return x + y
 }
 

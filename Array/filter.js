@@ -13,3 +13,16 @@ const caro = produto => produto.preco >= 500
 const fragil = produto => produto.fragil
 const filtrado = produtos.filter(caro).filter(fragil)
 console.log(filtrado)
+console.log('-----------------------------')
+
+//var papel = new Produto("Papel", 1.00, true);*/
+//produtos.push(produtos.nome ="Papel", produtos.preco = 1.00, produtos.fragil = true)
+
+//produtos.nome.push = "Papel"
+//console.log(produtos)
+
+/*function Produto(nome, preco, fragil){
+    this.nome = nome;
+    this.preco = preco;
+    this.fragil = fragil;
+}*/

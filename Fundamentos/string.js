@@ -1,5 +1,7 @@
 const escola = "JRcode"
+console.log(escola.substring(2))
 
+/*
 console.log(escola.charAt(4))
 console.log(escola.charAt(6))
 console.log(escola.charCodeAt(4))
@@ -13,4 +15,4 @@ console.log('Desenvolvedor ' + 'escola'  + ' !')
 console.log(escola.replace('c', 'C'))
 console.log(escola.replace(/\o/, 'O')) //expressão regular substitui todos
 
-console.log('Ana,Maria,Pedro'.split(',')) //gera um Array com os dados separando pela virgula
+console.log('Ana,Maria,Pedro'.split(',')) //gera um Array com os dados separando pela virgula*/

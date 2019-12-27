@@ -24,15 +24,33 @@ console.log(obj.falar())
 function run (fun){
     fun()
 }
- run(function (){console.log('Executando...') })
+run(function (){console.log('Executando...') })
 
- //Uma função pode retornar/conter uma função
- function soma(a, b){
-     return function(c){
-         console.log(a + b + c)
-     }
- }
+//Uma função pode retornar/conter uma função(***Talvez posso usar no caso pra preencher instituicao***)
+function soma(a, b){
+    return function(c){
+        console.log(a + b + c)
+    }
+}
 
- soma(2, 3)(4)
+soma(2, 3)(4)
 const cincoMais = soma(2, 3)
 cincoMais(4)
+
+
+
+Form.addCustomModal({
+    title: "Título modal",
+    description: "mensagem a ser apresentada", 
+    //false para não aparecer o botão “fechar” padrão da modal
+    showButtonClose: false, 
+    buttons: [{
+        name: "Confirmar", 
+        icon: "add",
+        // true: para fechar a modal após a ação ser realizada e false: para não fechar a modal
+        closeOnClick: true,
+        action: function () { 
+            //ação a ser realizada
+        }
+    }] 
+});

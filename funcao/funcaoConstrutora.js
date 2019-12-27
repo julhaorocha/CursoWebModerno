@@ -12,7 +12,7 @@ function Carro(velocidadeMaxima = 200, delta = 5){
     }
 
     //metodo publico
-    this.getVelocidadeAtual = function () {
+    this.getVelocidadeAtual = function () {//this torna visivel fora da função
         return velocidadeAtual
     }
 }

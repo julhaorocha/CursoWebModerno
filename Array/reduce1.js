@@ -6,9 +6,10 @@ const alunos = [
 ]
 
 console.log(alunos.map(a => a.nota))
+console.log("-------------------------------------")
 const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual) {
     console.log(acumulador, atual)
     return acumulador + atual
 }, 0)
-
+console.log("-------------------------------------")
 console.log(resultado)

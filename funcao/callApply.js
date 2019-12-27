@@ -9,7 +9,7 @@ const produto = {
     getPreco
 }
 
-console.log(produto.getPreco())
+console.log(produto.getPreco()) //nesse contexto o preço não esta definido
 
 const carro = {preco: 49990, desc: 0.20}
 

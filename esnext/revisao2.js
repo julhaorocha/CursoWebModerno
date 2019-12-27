@@ -1,4 +1,4 @@
-//Arrow function
+/*//Arrow function
 
 const soma = (a, b) => a + b //parametros e retorno apenas
 console.log(soma(2, 3))
@@ -20,6 +20,14 @@ log()
 log('Sou mais forte')
 
 // operador res
+
+function total(...numeros) {
+    let total = 0
+    numeros.forEach(n => total += n)
+    return total
+}
+console.log(total(2, 3, 4, 5))
+*/
 
 function total(...numeros) {
     let total = 0
